@@ -1,5 +1,5 @@
 *{
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -28,7 +28,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: visible;
 }
 
 /*Header Start*/
@@ -39,19 +38,18 @@ header {
 }
 
 #navbar{
-  height: 6%;
+  height: 7%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #navbar a img{
-  width: 85px;
+  width: 115px;
   margin-left: 25%;
 }
 .nav-list {
   display: flex;
   margin-right: 100px;
-  font-size: 14px;
 }
 #navbar ul li a {
   padding: 15px 20px;
@@ -100,13 +98,11 @@ header .content{
   justify-content: center;
   align-items: center;
   height: 54%;
-  /* cursor: pointer; */
 }
 
 header .content h1{
-  font-size: 30px;
+  font-size: 40px;
   color: #fff;
-  cursor: pointer;
 }
 header .content p {
   margin: 20px 0 40px;
@@ -138,68 +134,62 @@ header .content h1 span,
   margin-left: -92px;
 } */
 
-.container .sun img {
+.sun img {
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: -1em;
-  left: 16em;
-  width: 28em;
-  height: 28em;
+  top: -2em;
+  left: 18em;
+  width: 35em;
+  height: 35em;
   border-radius: 50%;
-  filter: drop-shadow(20px 1px 55px rgb(243 168 28));
   /* box-shadow: 0 0 3em rgb(255, 128, 0); */
-  animation: orbit 561s linear infinite;
-  cursor: pointer;
+  /* animation: orbit 267s linear infinite; */
 }
 
-.container .mercury img,
-.container .venus img,
-.container .earth img,
-.container .moon img,
-.container .mars img,
-.container .jupiter img,
-.container .saturn img,
-.container .uranus img,
-.container .neptune img
- {
+.mercury img,
+.venus img,
+.earth img,
+.moon img,
+.mars img,
+.jupiter img,
+.saturn img,
+.uranus img,
+.neptune img,
+.pluto img {
     position: absolute;
-    /* border-style: solid; */
-    /* border-color:  transparent transparent transparent; */
-    /* border-width: 0.1em 0.1em 0 0; */
-    /* border-radius: 50%; */
-    left: 25%;
-    /* width: 5em; */
-    /* height: 5em; */
+    border-style: solid;
+    border-color:  transparent transparent transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: orbit 267s linear infinite;
 }
 
 
 .mercury img {
-  top: 11em;
-  margin-left: 40em;
-  width: 3em;
-  height: 3em;
+  top: 12em;
+  margin-left: 36em;
+  width: 5em;
+  height: 5em;
   /* background-image: url('./images/mercury.png');
   background-size: cover; */
 }
 .venus img {
-  top: 11.2em;
+  top: 12em;
   margin-left: 45em;
-  width: 3em;
-  height: 3em;
+  width: 5em;
+  height: 5em;
   /* background-image: url('./images/venus.png');
   background-size: cover; */
 }
 .earth img {
-  top: 10.4em;
-  margin-left: 52em;
-  width: 4.5em;
-  height: 4.5em;
+  top: 11em;
+  margin-left: 55em;
+  width: 7em;
+  height: 7em;
   /*top: 3em;
   right: 0em;
   width: 5em;
@@ -209,42 +199,42 @@ header .content h1 span,
 }
 
 .mars img {
-  top: 11em;
-  margin-left: 61em;
-  width: 3.5em;
-  height: 3.5em;
+  top: 12em;
+  margin-left: 66em;
+  width: 5em;
+  height: 5em;
   /* background-image: url('./images/mars.png');
   background-size: cover; */
 }
 .jupiter img {
-  top: 8.5em;
-  margin-left: 71em;
-  width: 8em;
-  height: 8em;
+  top: 9.5em;
+  margin-left: 75em;
+  width: 10em;
+  height: 11em;
   /* background-image: url('./images/jupiter.png');
   background-size: cover; */
 }
 .saturn img {
-  top: 9.5em;
-  margin-left: 83em;
-  width: 6em;
-  height: 6em;
+  top: 10.5em;
+  margin-left: 89em;
+  width: 9em;
+  height: 8em;
   /* background-image: url('./images/saturn.png');
   background-size: cover; */
 }
 .uranus img {
-  top: 11em;
-  margin-left: 93em;
-  width: 4em;
-  height: 4em;
+  top: 12em;
+  margin-left: 102em;
+  width: 5.5em;
+  height: 5.5em;
   /* background-image: url('./images/uranus.png');
   background-size: cover; */
 }
 .neptune img {
-  top: 11em;
-  margin-left: 102em;
-  width: 4em;
-  height: 4em;
+  top: 12em;
+  margin-left: 113em;
+  width: 6em;
+  height: 6em;
   /* background-image: url('./images/neptune.png');
   background-size: cover; */
 } 
@@ -268,7 +258,6 @@ header .content h1 span,
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  height: 15%;
   right: 45%;
   top: 9%;
   background: linear-gradient(to right, rgb(255 227 104 / 0%), rgb(191 139 102 / 5%));
@@ -278,17 +267,15 @@ h4{
   color: #a89024f3;
 }
 .del p {
-  width: 50%;
+  width: 55%;
   text-align: center;
   line-height: 1.25em;
-  margin-top: 1em;
+  margin-top: 2em;
   color: #fff;
-  font-size: small;
 }
 .btn{
   padding: 8px 23px;
-  left: 45%;
-  margin-top: 3%;
+  margin-top: 15.5%;
   position: absolute;
   background: linear-gradient(to right, rgb(173 141 99 / 10%), rgb(255 227 104 / 27%));
   color: #fff;
@@ -296,8 +283,8 @@ h4{
   border-radius: 8px;
 }
 .img-plant img{
-  top: 0;
-  left: 69em;
+  top: 5em;
+  left: 85em;
   width: 10em;
   height: 10em;
   position: absolute;
@@ -312,7 +299,7 @@ h4{
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  height: 15%;
+  /* height: 14%; */
   left: 50%;
   top: 41%;
   /* overflow: hidden; */
@@ -322,8 +309,7 @@ h4{
 
 .btn2{
   padding: 8px 23px;
-    left: 45%;
-    margin-top: 3%;
+  margin-top: 15.5%;
   position: absolute;
   background: linear-gradient(to right, rgb(255 227 104 / 27%), rgb(173 141 99 / 10%));
   color: #fff;
@@ -342,9 +328,9 @@ h4{
 
 .img-plant2 img{
   top: 0em;
-  right: 67em;
-  width: 9em;
-  height: 9em;
+  left: -34em;
+  width: 14em;
+  height: 11em;
   position: absolute;
 }
 /* plant3 */
@@ -355,7 +341,7 @@ h4{
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  height: 15%;
+  /* height: 17%; */
   right: 45%;
   top: 71%;
   /* overflow: hidden; */
@@ -365,8 +351,7 @@ h4{
 
 .btn3{
   padding: 8px 23px;
-    left: 45%;
-    margin-top: 3%;
+  margin-top: 14%;
   position: absolute;
   background: linear-gradient(to right, rgb(173 141 99 / 10%), rgb(255 227 104 / 27%));
   color: #fff;
@@ -376,17 +361,16 @@ h4{
 
 
 .del .Planet3 p {
-  width: 60%;
+  width: 55%;
   text-align: center;
   line-height: 1.25em;
-  margin-top: 0.5em;
+  margin-top: 1em;
   color: #fff;
-  font-size: small;
 }
 
 .img-plant3 img{
-  top: -1em;
-  left: 69em;
+  top: 42em;
+  right: 24em;
   width: 10em;
   height: 10em;
   position: absolute;
@@ -414,7 +398,6 @@ h4{
   flex-direction: column;
   justify-content: flex-start;
   left: 50%;
-  height: 15%;
   top: 5%;
   /* overflow: hidden; */
   background: linear-gradient(to right, rgb(255 227 104 / 1%), rgb(191 139 102 / 0%));
@@ -423,8 +406,7 @@ h4{
 
 .btn4{
   padding: 8px 23px;
-    left: 45%;
-    margin-top: 3%;
+  margin-top: 15.5%;
   position: absolute;
   background: linear-gradient(to right, rgb(255 227 104 / 27%), rgb(173 141 99 / 10%));
   color: #fff;
@@ -439,16 +421,15 @@ h4{
   line-height: 1.25em;
   margin-top: 1em;
   color: #fff;
-  font-size: small;
 }
 
 .img-plant4 img{
-  top: -2em;
-  right: 66em;
-  width: 11em;
-  height: 11em;
+  top: -4em;
+  left: -34em;
+  width: 15em;
+  height: 15em;
   position: absolute;
-  border-radius: 58%;
+  border-radius: 50%;
 } 
 
 /* plant5 */
@@ -459,7 +440,6 @@ h4{
   flex-direction: column;
   justify-content: flex-start;
   right: 45%;
-  height: 14%;
   top: 35%;
   /* overflow: hidden; */
   background: linear-gradient(to right, rgb(255 227 104 / 0%), rgb(191 139 102 / 5%));
@@ -468,8 +448,7 @@ h4{
 
 .btn5{
   padding: 8px 23px;
-    left: 45%;
-    margin-top: 3%;
+  margin-top: 14%;
   position: absolute;
   background: linear-gradient(to right, rgb(173 141 99 / 10%), rgb(255 227 104 / 27%));
   color: #fff;
@@ -484,14 +463,13 @@ h4{
   line-height: 1.25em;
   margin-top: 1em;
   color: #fff;
-  font-size: small;
 }
 
 .img-plant5 img{
-  top: -1em;
-  left: 69em;
-  width: 11em;
-  height: 11em;
+  top: 19em;
+  right: 22.5em;
+  width: 13em;
+  height: 13em;
   position: absolute;
   border-radius: 50%;
 } 
@@ -504,7 +482,7 @@ h4{
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  height: 15%;
+  height: 17%;
   left: 50%;
   top: 67%;
   /* overflow: hidden; */
@@ -514,8 +492,7 @@ h4{
 
 .btn6{
   padding: 8px 23px;
-    left: 45%;
-    margin-top: 3%;
+  margin-top: 15.4%;
   position: absolute;
   background: linear-gradient(to right, rgb(255 227 104 / 27%), rgb(173 141 99 / 10%));
   color: #fff;
@@ -530,14 +507,13 @@ h4{
   line-height: 1.25em;
   margin-top: 1em;
   color: #fff;
-  font-size: small;
 }
 
 .img-plant6 img{
-  top: -1em;
-  right: 66em;
-  width: 11em;
-  height: 11em;
+  top: 38em;
+  left: 24em;
+  width: 18em;
+  height: 14em;
   position: absolute;
   border-radius: 8%;
 } 
@@ -569,7 +545,6 @@ h4{
   flex-direction: column;
   justify-content: flex-start;
   right: 45%;
-  height: 17%;
   top: 1%;
   background: linear-gradient(to right, rgb(255 227 104 / 0%), rgb(191 139 102 / 5%));
   border-radius: 12px;
@@ -577,8 +552,7 @@ h4{
 
 .btn7{
   padding: 8px 23px;
-    left: 45%;
-    margin-top: 3%;
+  margin-top: 14%;
   position: absolute;
   background: linear-gradient(to right, rgb(173 141 99 / 10%), rgb(255 227 104 / 27%));
   color: #fff;
@@ -593,14 +567,13 @@ h4{
   line-height: 1.25em;
   margin-top: 1em;
   color: #fff;
-  font-size: small;
 }
 
 .img-plant7 img{
-  top: 0em;
-  left: 69em;
-  width: 10em;
-  height: 10em;
+  top: -3em;
+  right: 21em;
+  width: 17em;
+  height: 17em;
   position: absolute;
   border-radius: 50%;
 } 
@@ -616,7 +589,6 @@ h4{
   justify-content: flex-start;
   left: 50%;
   top: 54%;
-  height: 21%;
   /* overflow: hidden; */
   background: linear-gradient(to right, rgb(255 227 104 / 1%), rgb(191 139 102 / 0%));
   border-radius: 12px;
@@ -624,8 +596,7 @@ h4{
 
 .btn8{
   padding: 8px 23px;
-    left: 45%;
-    margin-top: 3%;
+  margin-top: 16%;
   position: absolute;
   background: linear-gradient(to right, rgb(255 227 104 / 27%), rgb(173 141 99 / 10%));
   color: #fff;
@@ -635,19 +606,18 @@ h4{
 
 
 .del3 .Planet8 p {
-  width: 52%;
+  width: 55%;
   text-align: center;
   line-height: 1.25em;
   margin-top: 1em;
   color: #fff;
-  font-size: small;
 }
 
 .img-plant8 img{
-  top: -1em;
-  right: 66em;
-  width: 11em;
-  height: 11em;
+  top: 18em;
+  left: 25em;
+  width: 17em;
+  height: 17em;
   position: absolute;
   border-radius: 50%;
 } 
@@ -676,9 +646,9 @@ h4{
 }
 
 .space-event {
-  width: 76%;
+  width: 90%;
   max-width: 1250px;
-  height: 78vh;
+  height: 85vh;
   display: grid;
   grid-template: repeat(2, 1fr) / 1fr 0.75fr 2fr;
 }
@@ -717,7 +687,7 @@ h4{
 .space-info {
   color: #fff;
   padding: 2em 5em;
-  top: 2%;
+  top: 15%;
 }
 
 .space-info h3 {
@@ -728,14 +698,9 @@ h4{
   border-bottom: 0.25px solid #ffcc00c9;
   text-transform: uppercase;
 }
-.space-info h3:hover{
-  color: #fffb00fd;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
 
 .space-info p {
-  line-height: 1.4em;
+  line-height: 1.625em;
 }
 
 /* End of apollo */
@@ -743,7 +708,7 @@ h4{
 /* Start of Footer */
 
 footer {
-  height: 54vh;
+  height: 50vh;
   background: url("images/land.png") 50% 100%/ 100% 100%,
     url("images/moon.png") 50% 100% / auto,
     radial-gradient(
@@ -807,72 +772,366 @@ footer {
   width: 100%;
 }
 
-
+.footer-content {
+    height: 40vh;
+  }
 /* End of Footer */
 
 
-  .stage {
-    width: 400px;
-    height: 400px;
-    display: inline-block;
-    align-self: center;
-  }
 
-  /* .space-event {
-    width: 95%;
-    height: 65vh;
-  }
-  .space-item:nth-child(1) .space-image {
-    top: 60%;
-  }
+  
+  @media(max-width: 440px){
 
-  .space-item:nth-child(4) .space-image {
-    top: 35%;
-  } */
-
-  .planet-metric {
-    grid-gap: 3em;
-    margin: 4em 0;
-  }
-
-  .planet-card {
-    display: grid;
-    grid-template: repeat(2, 1fr) / 100%;
-    padding: 0 1.25em;
-  }
-
-  img {
-    /* position: absolute; */
-    /* height: 55%; */
-    /* object-fit: cover; */
-    /* left: -13%; */
-    top: 50%;
-    /* transform: translate(-50%, -50%); */
-  }
-
-  .footer-content {
-    height: 40vh;
-  }
-
-  .up{
-    position: fixed;
-    bottom: 10px;
-    right: -40px;
-    background-color: #a5a2975b;
-    color: #fff;
-    font-size: 10px;
-    padding: 5px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  .up.show{
-    right: 15px;
-  }
-
-
-  @keyframes orbit {
-    to {
-        transform: rotate(360deg);
+    /*Header Start*/
+    header {
+      height: 95vh;
     }
-  }
+    
+    #navbar{
+      height: 6%;
+    }
+    #navbar a img{
+      width: 77px;
+    }
+    .nav-list {
+      margin-right: 0px;
+      font-size: 10px;
+    }
+
+    header .content{
+      height: 54%;
+      margin-top: -21%;
+    }
+    
+    header .content h1{
+      font-size: 17px;
+      cursor: pointer;
+    }
+    header .content p {
+      font-size: small;
+    }
+
+    .container .sun img {
+      top: 6em;
+      left: 15em;
+      width: 14em;
+      height: 14em;
+      filter: drop-shadow(20px 1px 55px rgb(243 168 28));
+      cursor: pointer;
+    }
+    
+    .container .mercury img,
+    .container .venus img,
+    .container .earth img,
+    .container .moon img,
+    .container .mars img,
+    .container .jupiter img,
+    .container .saturn img,
+    .container .uranus img,
+    .container .neptune img
+     {
+        position: absolute;
+        left: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .mercury img {
+      top: 11em;
+      margin-left: 12em;
+      width: 1em;
+      height: 1em;
+    }
+    .venus img {
+      top: 21em;
+      margin-left: 20em;
+      width: 1em;
+      height: 1em;
+      z-index: -1;
+
+    }
+    .earth img {
+      top: 14.8em;
+      margin-left: 16em;
+      width: 1.5em;
+      height: 1.5em;
+    }
+    
+    .mars img {
+      top: 15em;
+      margin-left: 24em;
+      width: 1.5em;
+      height: 1.5em;
+
+    }
+    .jupiter img {
+      top: 6em;
+      margin-left: 19em;
+      width: 3em;
+      height: 3em;
+      z-index: -1;
+    }
+    .saturn img {
+      top: 29.5em;
+      margin-left: 10em;
+      width: 3em;
+      height: 3em;
+    }
+    .uranus img {
+      top: -1em;
+      margin-left: 24em;
+      width: 0.5em;
+      height: 0.5em;
+
+    }
+    .neptune img {
+      top: 3em;
+      margin-left: 27em;
+      width: 0.3em;
+      height: 0.3em;
+    } 
+    
+    
+    /* plant1 */
+    
+    .del p {
+      line-height: 1em;
+      font-size: 8px;
+    }
+    .btn{
+      left: 31%;
+      margin-top: 10%;
+    }
+    .img-plant img{
+      top: -3%;
+      left: 16em;
+      width: 9em;
+      height: 9em;
+    }
+    
+    /* plant2 */
+    
+    .btn2{
+      left: 29%;
+      margin-top: 10%;
+      border-radius: 8px;
+    }
+    
+    
+    .del .Planet2 p {
+      line-height: 1.25em;
+      margin-top: 1em;
+    }
+    
+    .img-plant2 img{
+      top: 0em;
+      left: -9em;
+      width: 7em;
+      height: 7em;
+    }
+    /* plant3 */
+    
+    .btn3{
+      left: 28%;
+      margin-top: 9%;
+      border-radius: 8px;
+    }
+    
+    
+    .del .Planet3 p {
+      width: 60%;
+      line-height: 1em;
+      font-size: 8px;
+    }
+    
+    .img-plant3 img{
+      top: 0em;
+      left: 17em;
+      width: 8em;
+      height: 8em;
+    } 
+    
+
+    
+    /* plant4 */
+    
+    .btn4{
+      left: 27%;
+      margin-top: 11%;
+    }
+  
+    .del2 .Planet4 p {
+      line-height: 1em;
+      font-size: 8px;
+    }
+    
+    .img-plant4 img{
+      top: 0em;
+      left: -9em;
+      width: 7em;
+      height: 7em;
+    } 
+    
+    /* plant5 */
+    
+    .btn5{
+      left: 30%;
+      margin-top: 9%;
+    }
+    
+    
+    .del2 .Planet5 p {
+      line-height: 1em;
+      margin-top: 1em;
+      font-size: 8px;
+    }
+    
+    .img-plant5 img{
+      top: 0em;
+      left: 18em;
+      width: 7em;
+      height: 7em;
+    } 
+    
+    
+    /* plant6 */
+
+    .btn6{
+      left: 28%;
+      margin-top: 10%;
+      border-radius: 8px;
+    }
+    
+    
+    .del2 .Planet6 p {
+      line-height: 1em;
+      margin-top: 1em;
+      font-size: 8px;
+    }
+    
+    .img-plant6 img{
+      top: 1em;
+      left: -9em;
+      width: 6em;
+      height: 6em;
+    } 
+
+    /* plant7 */
+
+    .btn7{
+      left: 31%;
+      margin-top: 10%;
+      border-radius: 8px;
+    }
+  
+    .del3 .Planet7 p {
+      line-height: 1em;
+      margin-top: 1em;
+      font-size: 8px;
+    }
+    
+    .img-plant7 img{
+      top: 0em;
+      left: 18em;
+      width: 6em;
+      height: 6em;
+    } 
+    
+    
+    /* plant8 */
+
+    .btn8{
+      left: 28%;
+      margin-top: 10%;
+    }
+    
+    
+    .del3 .Planet8 p {
+      line-height: 1em;
+      font-size: 8px;
+    }
+    
+    .img-plant8 img{
+      top: 1em;
+      left: -9em;
+      width: 6em;
+      height: 6em;
+    } 
+    
+    /* Start of apollo */
+    
+    .space-event {
+      width: 76%;
+      height: 58vh;
+    }
+    .space-image {
+      width: 19em;
+      height: 16em;
+      top: 18em;
+      right: -3em;
+      border-radius: 12px;
+    }
+
+    .space-info {
+      top: 2%;
+      left: -10%;
+      width: 150%;
+    }
+    
+    .space-info h3 {
+      font-size: 1.5rem;
+    }
+    
+    .space-info p {
+      line-height: 1.5em;
+      font-size: 10px;
+    }
+    
+    /* End of apollo */
+    
+    /* Start of Footer */
+    
+    footer {
+      height: 54vh;
+      background: url("images/land.png") 45% 99%/ 98% 65%,
+        url("images/moon.png") 50% 100% / auto,
+        radial-gradient(
+          80% 100% at 50% 70%,
+          rgba(255, 255, 255, 0.199) 10%,
+          transparent 80%
+        );
+      background-repeat: no-repeat;
+    }
+
+    .footer-links-group {
+      font-size: 10px;
+    }
+
+    /* End of Footer */
+    
+      .up{
+        position: fixed;
+        bottom: 26px;
+        right: -15%;
+        background-color: #a5a2975b;
+        color: #fff;
+        font-size: 2px;
+        padding: 5px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      .up.show{
+        right: -6px;
+      }
+    
+    
+      /* @keyframes orbit {
+        to {
+            transform: rotate(360deg);
+        }
+      }
+     */
+}
